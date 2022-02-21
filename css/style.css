@@ -15,7 +15,7 @@
 
   [class^="box-"]{
       display: grid;
-      border-radius: .3125rem;
+      border-radius: 7px;
       padding: 25px;
       width: 100%;
 
@@ -67,7 +67,7 @@
       /*You first input properties of the rows 
       before you input columns and they should be separated by a slash*/
      grid-template: repeat(4, 1fr) / repeat(9, 1fr);
-     gap: .9375rem;  
+     gap: 30px;  
      /*justify items moves grid contents along the column, 
      justify contents move the grid elements around the parent div*/
       
