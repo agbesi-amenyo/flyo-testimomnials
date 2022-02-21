@@ -1,0 +1,183 @@
+ 
+*{
+    margin: 0;
+    padding: .625rem;
+    box-sizing: border-box;
+  }
+  body{
+      font-size: 2.5rem;
+      font-family: 'Fira Code', monospace;
+      font-family: 'Source Sans Pro', sans-serif;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #edf2f8;
+  }
+
+  [class^="box-"]{
+      display: grid;
+      border-radius: .3125rem;
+      padding: 25px;
+      width: 100%;
+
+  }
+
+  /*.container{
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 100px 200px auto;
+
+  }
+  */
+  /*.container {
+      display: grid ;
+      height: 100vh;
+      gap: 20px;
+      grid-template-rows: 100px 300px auto ;
+  }*/
+ /*.container {
+      display: grid ;
+      width: 100vw;
+      height: 100vh;
+      gap: 20px;
+      grid-template-areas: 
+      "A A A A   A A A A    A A A A"
+      "B B B B   B B B B    B B C C"
+      ;
+  }
+  .box-1{
+      grid-area: A;
+  }
+  .box-2{
+      grid-area: B;
+  }
+  .box-3{
+      grid-area: C;
+  }*/
+
+  .container{ 
+    margin: 1.5625rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      /*border: 1px solid red;*/
+      display: grid ;
+      width: 80%;
+      height: 85vh;
+      /*You first input properties of the rows 
+      before you input columns and they should be separated by a slash*/
+     grid-template: repeat(4, 1fr) / repeat(9, 1fr);
+     gap: .9375rem;  
+     /*justify items moves grid contents along the column, 
+     justify contents move the grid elements around the parent div*/
+      
+  }
+  .box-1{
+      position: relative;
+      grid-column: span 5 ;
+      grid-row: span 2;
+      justify-items: end;
+      background-color: #733ec9;
+      text-align: justify;
+  }
+  #avatar {
+    position: absolute;
+     border-radius: 100%;
+     padding: 0rem;
+     margin-left: .625rem;
+  }
+ #quotes{
+      position: absolute;
+      width: 20%;
+      color: white;
+      margin-right: 6.25rem;
+
+  }
+  .box-1 h3 {
+      font-size: 1.25rem;
+      color: white;
+      z-index: 1;
+      margin-top: 3.125rem;
+  }
+  .box-1 p{
+      font-size: .9375rem;
+      color: #aeb0b4;
+  }
+
+  .box-2{
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #49546a;
+      
+  }
+  .box-2 h3{
+       font-size: 1.25rem;
+       color: white;
+  }
+  .box-2 p{
+    font-size: .9375rem;
+    color: #aeb0b4;
+  }
+  .box-3{
+      grid-column: span 2;
+      grid-row: span 4;
+      background-color: #fefeff;
+      padding: 15px;
+  }
+  .box-3 h3{
+    font-size: 1.25rem;
+  }
+
+  .box-3 p{
+    font-size: .9375rem;
+    color: #aeb0b4;
+  }
+  .box-4{
+    grid-column: span 2;  
+    grid-row: span 2;
+    background-color: #fefeff;
+  }
+
+  .box-4 h3{
+    font-size: 1.25rem;
+  }
+
+  .box-4 p{
+    font-size: .9375rem;
+    color: #aeb0b4;
+
+  }
+
+  .box-5 h3{
+    font-size: 1.25rem;
+    color: white;
+  }
+
+  .box-5 p{
+    font-size: .9375rem;
+    color: #aeb0b4;
+
+  }
+  .box-5{
+    grid-column: span 5; 
+    grid-row: span 2;
+    background-color: #18202d;
+
+  }
+
+
+/*FOOTER*/
+.attribution{
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+ }
